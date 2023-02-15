@@ -58,7 +58,7 @@ nav{
 
 #sidebar{
     height: calc(100vh - 50px);
-    width: 150px;
+    max-width: 150px;
 
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
