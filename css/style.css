@@ -3,6 +3,14 @@
 }
 
 
+/* ///////GENERALI/////// */
+
+.my_btn{
+    border: transparent;
+    color: white;
+    border-radius: 10px;
+}
+
 /* navbar______________________________________ */
 
 nav{
@@ -40,10 +48,29 @@ nav{
 }
 
 
+/* right-main-sidebar */
+
 #sidebar{
     height: calc(100vh - 50px);
-    max-width: 150px;
+    width: 150px;
 
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
+}
+
+/* left-main */
+
+#main-content{
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+
+#main_top{
+    background-color: #1b70e8 ;
+}
+
+#main_top .my_btn{
+    background-color: #0c4696;
 }
