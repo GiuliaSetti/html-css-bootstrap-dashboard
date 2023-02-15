@@ -1,6 +1,6 @@
-.debug *{
+/* .debug *{
     outline: 1px solid blue;
-}
+} */
 
 
 /* ///////GENERALI/////// */
@@ -9,6 +9,12 @@
     border: transparent;
     color: white;
     border-radius: 10px;
+}
+
+.my_btn_square{
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: gray;
 }
 
 /* navbar______________________________________ */
@@ -73,4 +79,11 @@ nav{
 
 #main_top .my_btn{
     background-color: #0c4696;
+}
+
+
+/* main_grids */
+
+td img{
+    width: 25px;
 }
