@@ -1,3 +1,31 @@
 .debug *{
     outline: 1px solid blue;
 }
+
+
+/* navbar */
+
+nav{
+    width: 100%;
+
+}
+
+/* left */
+
+.my_logo{
+    width: 3rem;
+}
+
+
+/* center */
+
+.my_search_bar input{
+    background-color: rgb(235, 233, 233);
+}
+
+
+/* right */
+
+.my_bell{
+    color: orange;
+}
