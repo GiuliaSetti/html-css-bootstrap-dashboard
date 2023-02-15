@@ -22,53 +22,117 @@
 </head>
 <body class="debug">
 
-    <!-- navbar -->
-    <nav>
+    <!-- header -->
 
-        <div class="d-flex py-1 align-items-center gap-2">
+    <header>
 
-            <!-- logo -->
-            <div class="nav_left px-1">
-                <div class="my_logos">
-                    <img class="d-none d-lg-block" src="img/logo.svg" alt="bool_logo">
-                    <img class="d-lg-none my_logo" src="img/mobile-logo.png" alt="bool_logo_mobile">
+        <!-- navbar -->
+
+        <nav>
+    
+            <div class="d-flex py-1 align-items-center gap-2">
+    
+                <!-- logo -->
+                <div class="nav_left px-1">
+                    <div class="my_logos">
+                        <img class="d-none d-lg-block" src="img/logo.svg" alt="bool_logo">
+                        <img class="d-lg-none my_logo" src="img/mobile-logo.png" alt="bool_logo_mobile">
+                    </div>
                 </div>
-            </div>
-            <!-- /logo -->
-
-            <!-- search bar -->
-            <div class="nav_center px-1 flex-grow-1">
-                <div class="my_search_bar d-flex align-items-center gap-1">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"/>
+                <!-- /logo -->
+    
+                <!-- search bar -->
+                <div class="nav_center px-1 flex-grow-1">
+                    <div class="my_search_bar d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"/>
+                    </div>
                 </div>
+                <!-- /search bar -->
+    
+    
+                <!-- links -->
+                <div class="nav_right my_links px-1">
+                    <ul class="list-unstyled text-secondary d-flex justify-content-between pt-3 gap-3">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-bars"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-circle-question"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-bell my_bell"></i>
+                            <ul class="dropdown-menu px-3">
+                                <li class="nav-item"><a class="dropown nav-link text-secondary" href="#">Profilo</a></li>
+                                <li class="nav-item"><a class="dropown nav-link text-secondary" href="#">Fatturazione</a></li>
+                                <li class="nav-item"><a class="dropown nav-link text-secondary" href="#">Logout</a></li>
+                            </ul></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /links -->
+    
             </div>
-            <!-- /search bar -->
+        </nav>
 
+        <!-- /navbar -->
 
-            <!-- links -->
-            <div class="nav_right my_links px-1">
-                <ul class="list-unstyled text-secondary d-flex justify-content-between pt-3 gap-3">
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-bars"></i></a>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-circle-question"></i></a>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-bell my_bell"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /links -->
+    </header>
+
+    <!-- /header -->
+
+    <main>
+
+        <div id="main_inner" class="d-flex">
+
+            <aside id="sidebar" class="d-flex flex-column justify-content-between px-3 py-2">
+
+                <div class="top">
+
+                    <ul class="list list-unstyled  text-white">
+                        
+                        <li class="nav-item">
+                            <a class=" nav-link" href="#">
+                                <i class="fa-solid fa-house px-2"></i>
+                                <span class="d-none d-lg-inline"> Home </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class=" nav-link" href="#"> 
+                                <i class="fa-solid fa-chart-simple px-2"></i>
+                                <span class="d-none d-lg-inline">Stats</span> 
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-signal px-2"></i>
+                                <span class="d-none d-lg-inline"> Signals </span> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bottom text-white">
+
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-gear px-2"></i>
+                        <span class="d-none d-lg-inline"> Admin </span>
+                    </a>
+                  
+                </div>
+
+            </aside>
 
         </div>
-    </nav>
 
-    <!-- /navbar -->
+
+
+    </main>
 
 
 
