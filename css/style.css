@@ -66,6 +66,9 @@ main{
     background-image: url(../img/sidebar-bg.png);
 }
 
+#sidebar_top li:hover{
+    background-color: rgba(255, 255, 255, 0.505);
+}
 
 
 /* main_content_______________*/
