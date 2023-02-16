@@ -97,21 +97,21 @@
                 <div id="sidebar_top">
                     <ul class="text-white p-0">
                         
-                        <li class="nav-item">
+                        <li class="nav-item p-1">
                             <a class=" nav-link" href="#">
                                 <i class="fa-solid fa-house px-1"></i>
                                 <span class="d-none d-lg-inline"> Home </span>
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item p-1">
                             <a class=" nav-link" href="#"> 
                                 <i class="fa-solid fa-chart-simple px-1"></i>
                                 <span class="d-none d-lg-inline">Stats</span> 
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item p-1">
                             <a class="nav-link" href="#">
                                 <i class="fa-solid fa-signal px-1"></i>
                                 <span class="d-none d-lg-inline"> Signals </span> 
@@ -183,8 +183,106 @@
                             Nuovo Studente
                         </span>
 
-                        <button class="btn btn-outline-light" type="button">+</button>
+                        <button class="btn btn-primary text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
+                        <!-- OFFCANVAS -->
+                        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                            <!-- titolo offcanvas -->
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body text-start">
+
+                                <!-- nome e cognome -->
+                                <div class="row g-3">
+
+                                    <div class="col">
+                                        <label for="inputname" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" aria-label="Nome">
+                                    </div>
+
+                                    <div class="col">
+                                        <label for="inputsurname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" aria-label="Cognome">
+                                    </div>
+                                </div>
+
+                                <!-- email e password -->
+                                <form class="row g-3 my-1">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                      
+                                        <div class="input-group">
+                                            <div class="input-group-text">@</div>
+                                            <input type="text" class="form-control" id="inlineFormInputGroupUsername">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+
+                                    <!-- indirizzo città cap stato -->
+
+                                    <!-- indirizzo -->
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+
+                                    <!-- città -->
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">Città</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+                                    <!-- scegli stato -->
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">Stato</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Scegli</option>
+                                        <option>Italia</option>
+                                        <option>Spagna</option>
+                                        <option>Inghilterra</option>
+                                        <option>Francia</option>
+                                        <option>Germania</option>
+                                      </select>
+                                    </div>
+
+                                    <!-- CAP -->
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+
+                                    <!-- upload a file -->
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                      </div>
+
+                                    <!-- select -->
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Seleziona per proseguire
+                                        </label>
+                                      </div>
+                                    </div>
+
+                                    <!-- buttons -->
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Salva</button> 
+                                      <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                  </form>
+                            </div>
+                        </div>
+
+                        <!-- /OFFCANVAS /////// -->
                     </div>
                 </div>
 
