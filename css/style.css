@@ -1,14 +1,26 @@
 /* .debug *{
     outline: 1px solid blue;
-} */
+}
+ */
 
 
-/* ///////GENERALI/////// */
+
+
+/* GENERALI____________ */
+
+#my_main{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+ul{
+    list-style: none;
+}
 
 .my_btn{
+    background-color: #144b98;
     border: transparent;
-    color: white;
-    border-radius: 10px;
 }
 
 .my_btn_square{
@@ -17,73 +29,62 @@
     color: gray;
 }
 
-/* navbar______________________________________ */
+/* ///////////////////////// */
+
+/* NAVBAR_________________ */
 
 nav{
     width: 100%;
-    height: 50px;
-    background-color: white;
+    height: 65px;
 }
-
-/* left */
 
 .my_logo{
-    width: 3rem;
+    width: 40px;
 }
 
-
-/* center */
-
-.my_search_bar input{
-    background-color: rgb(235, 233, 233);
-}
-
-
-/* right */
-
-.my_bell{
+.fa-bell{
     color: orange;
 }
 
-/* ********************************* */
 
-/* MAIN____________________________ */
+/* ////////////////////////// */
+/* MAIN_____________________ */
 
-#main_inner{
-    height: calc(100vh - 50px);
+
+/* sidebar____________________ */
+
+main{
+    width: 100%;
+    height: calc(100vh - 65px);
 }
 
-
-/* right-main-sidebar */
-
 #sidebar{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 65px);
     max-width: 150px;
 
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
 }
 
-/* left-main */
 
-#main-content{
-    height: calc(100vh - 50px);
-    width: 100%;
-    background-color: #f8f9fa;
-}
+
+/* main_content_______________*/
 
 
 #main_top{
     background-color: #1b70e8 ;
 }
 
-#main_top .my_btn{
-    background-color: #0c4696;
+#main_inner{    
+    background-color: #f8f9fa;
 }
 
 
-/* main_grids */
+/* main_content_______left_col_____ */
 
-td img{
+table img{
     width: 25px;
 }
+
+
+
